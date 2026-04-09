@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -18,13 +19,15 @@ export default function Header() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a
-          href="#"
-          className={`text-xl font-bold tracking-tight font-[family-name:var(--font-inter)] transition-colors ${
-            scrolled ? "text-heading" : "text-white"
-          }`}
-        >
-          LinLogi
+        <a href="#">
+          <Image
+            src={scrolled ? "/logo/noBgBlack.svg" : "/logo/noBgColor.svg"}
+            alt="LinLogi"
+            width={120}
+            height={60}
+            className="h-8 w-auto"
+            priority
+          />
         </a>
         <a
           href="#contact"
