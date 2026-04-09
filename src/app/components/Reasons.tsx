@@ -15,19 +15,19 @@ const reasons = [
 
 export default function Reasons() {
   return (
-    <section className="py-24 md:py-32 px-6 bg-white">
+    <section className="py-24 md:py-32 px-6 bg-dark-blue">
       <div className="max-w-5xl mx-auto">
-        <h2 className="fade-in text-2xl md:text-3xl font-bold text-navy text-center">
+        <h2 className="fade-in text-2xl md:text-3xl font-bold text-white text-center">
           LinLogiにしかできないこと
         </h2>
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
           {reasons.map((reason, i) => (
             <div
               key={i}
-              className="fade-in bg-light-gray rounded-lg p-8"
+              className="fade-in bg-white rounded-lg p-8 shadow-md"
             >
-              <h3 className="text-lg font-bold text-navy">{reason.title}</h3>
-              <p className="mt-4 text-sm leading-relaxed text-text-light">
+              <h3 className="text-lg font-bold text-heading">{reason.title}</h3>
+              <p className="mt-4 text-sm leading-relaxed text-body">
                 {reason.body}
               </p>
             </div>

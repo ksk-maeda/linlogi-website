@@ -20,22 +20,22 @@ export default function Services() {
   return (
     <section className="py-24 md:py-32 px-6 bg-light-gray">
       <div className="max-w-5xl mx-auto">
-        <h2 className="fade-in text-2xl md:text-3xl font-bold text-navy text-center">
+        <h2 className="fade-in text-2xl md:text-3xl font-bold text-heading text-center">
           サービス
         </h2>
-        <p className="fade-in mt-4 text-base text-text-light text-center">
+        <p className="fade-in mt-4 text-base text-body text-center">
           設計から実行まで、一気通貫でやり切ります。
         </p>
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <div key={i} className="fade-in">
-              <div className="text-sm font-bold text-accent font-[family-name:var(--font-inter)] tracking-wider">
+              <div className="text-sm font-bold text-main-blue font-[family-name:var(--font-inter)] tracking-wider">
                 STEP {step.number}
               </div>
-              <h3 className="mt-3 text-lg font-bold text-navy">
+              <h3 className="mt-3 text-lg font-bold text-heading">
                 {step.title}
               </h3>
-              <p className="mt-4 text-sm leading-relaxed text-text-light">
+              <p className="mt-4 text-sm leading-relaxed text-body">
                 {step.body}
               </p>
             </div>

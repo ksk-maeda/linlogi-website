@@ -14,14 +14,14 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        scrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-dark-blue"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
           className={`text-xl font-bold tracking-tight font-[family-name:var(--font-inter)] transition-colors ${
-            scrolled ? "text-navy" : "text-white"
+            scrolled ? "text-heading" : "text-white"
           }`}
         >
           LinLogi
@@ -30,8 +30,8 @@ export default function Header() {
           href="#contact"
           className={`text-sm font-medium px-5 py-2.5 rounded transition-colors ${
             scrolled
-              ? "bg-navy text-white hover:bg-navy-light"
-              : "bg-white text-navy hover:bg-white/90"
+              ? "bg-main-blue text-white hover:bg-blue-hover"
+              : "bg-white text-dark-blue hover:bg-white/90"
           }`}
         >
           お問い合わせ

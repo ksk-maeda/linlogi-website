@@ -6,12 +6,12 @@ const stats = [
 
 export default function About() {
   return (
-    <section className="py-24 md:py-32 px-6 bg-light-gray">
+    <section className="py-24 md:py-32 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="fade-in text-2xl md:text-3xl font-bold text-navy text-center">
+        <h2 className="fade-in text-2xl md:text-3xl font-bold text-heading text-center">
           私たちは、もともと荷主でした。
         </h2>
-        <p className="fade-in mt-10 text-base md:text-lg leading-loose text-text-light">
+        <p className="fade-in mt-10 text-base md:text-lg leading-loose text-body">
           12年間、自社のEC物流と向き合い続けました。4拠点の移転、6つのWMSを実費で試し、100社以上の倉庫を視察してきた当事者です。
           円安による原価高騰で危機に直面したとき、物流を徹底的に内製化・改善した結果、物流コストが半減しました。
           業界のセオリーを外れた方法でしたが、圧倒的に合理的でした。
@@ -21,12 +21,12 @@ export default function About() {
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="bg-white rounded-lg p-6 text-center shadow-sm"
+              className="bg-main-blue rounded-lg p-6 text-center shadow-md"
             >
-              <div className="text-2xl md:text-3xl font-bold text-navy">
+              <div className="text-2xl md:text-3xl font-bold text-white">
                 {stat.value}
               </div>
-              <div className="mt-2 text-sm text-text-light">{stat.label}</div>
+              <div className="mt-2 text-sm text-white/80">{stat.label}</div>
             </div>
           ))}
         </div>

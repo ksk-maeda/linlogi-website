@@ -9,18 +9,18 @@ const problems = [
 
 export default function Problems() {
   return (
-    <section className="py-24 md:py-32 px-6 bg-white">
+    <section className="py-24 md:py-32 px-6 bg-light-gray">
       <div className="max-w-3xl mx-auto">
-        <h2 className="fade-in text-2xl md:text-3xl font-bold text-navy text-center">
+        <h2 className="fade-in text-2xl md:text-3xl font-bold text-heading text-center">
           こんなお悩みはありませんか？
         </h2>
         <ul className="mt-14 space-y-5">
           {problems.map((item, i) => (
             <li
               key={i}
-              className="fade-in flex items-start gap-4 text-base md:text-lg text-text-light"
+              className="fade-in flex items-start gap-4 text-base md:text-lg text-body"
             >
-              <span className="mt-1.5 w-2 h-2 rounded-full bg-accent shrink-0" />
+              <span className="mt-1.5 w-2 h-2 rounded-full bg-main-blue shrink-0" />
               {item}
             </li>
           ))}

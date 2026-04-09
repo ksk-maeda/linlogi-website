@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-navy border-t border-white/10 py-12 px-6">
+    <footer className="bg-dark-blue border-t border-white/10 py-12 px-6">
       <div className="max-w-5xl mx-auto text-center">
         <div className="text-lg font-bold text-white font-[family-name:var(--font-inter)] tracking-tight">
           LinLogi

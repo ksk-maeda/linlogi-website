@@ -15,7 +15,7 @@ export default function Contact() {
 
   if (submitted) {
     return (
-      <section id="contact" className="py-24 md:py-32 px-6 bg-navy">
+      <section id="contact" className="py-24 md:py-32 px-6 bg-main-blue">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-xl font-bold text-white">
             お問い合わせありがとうございます。
@@ -29,12 +29,12 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 md:py-32 px-6 bg-navy">
+    <section id="contact" className="py-24 md:py-32 px-6 bg-main-blue">
       <div className="max-w-2xl mx-auto">
         <h2 className="fade-in text-2xl md:text-3xl font-bold text-white text-center">
           まず、物流コストを診断します。
         </h2>
-        <p className="fade-in mt-6 text-base text-white/70 text-center leading-relaxed">
+        <p className="fade-in mt-6 text-base text-white/75 text-center leading-relaxed">
           直近の物流請求書をお持ちください。それだけで、改善できる余地が見えてきます。
           費用は一切かかりません。現状確認・相見積もりだけのご相談も歓迎です。
         </p>
@@ -58,24 +58,24 @@ export default function Contact() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm text-white/80 mb-2">
-                会社名 <span className="text-accent-light">*</span>
+                会社名 <span className="text-accent-line">*</span>
               </label>
               <input
                 type="text"
                 name="company"
                 required
-                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent"
+                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent-line"
               />
             </div>
             <div>
               <label className="block text-sm text-white/80 mb-2">
-                お名前 <span className="text-accent-light">*</span>
+                お名前 <span className="text-accent-line">*</span>
               </label>
               <input
                 type="text"
                 name="name"
                 required
-                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent"
+                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent-line"
               />
             </div>
           </div>
@@ -83,13 +83,13 @@ export default function Contact() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm text-white/80 mb-2">
-                メールアドレス <span className="text-accent-light">*</span>
+                メールアドレス <span className="text-accent-line">*</span>
               </label>
               <input
                 type="email"
                 name="email"
                 required
-                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent"
+                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent-line"
               />
             </div>
             <div>
@@ -99,7 +99,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent"
+                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent-line"
               />
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                 type="text"
                 name="monthly_shipments"
                 placeholder="例：500件"
-                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent"
+                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent-line"
               />
             </div>
             <div>
@@ -122,13 +122,13 @@ export default function Contact() {
               </label>
               <select
                 name="current_logistics"
-                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-accent"
+                className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-accent-line"
               >
-                <option value="" className="text-navy">
+                <option value="" className="text-heading">
                   選択してください
                 </option>
                 {logisticsOptions.map((opt) => (
-                  <option key={opt} value={opt} className="text-navy">
+                  <option key={opt} value={opt} className="text-heading">
                     {opt}
                   </option>
                 ))}
@@ -143,14 +143,14 @@ export default function Contact() {
             <textarea
               name="message"
               rows={4}
-              className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent resize-none"
+              className="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white text-sm placeholder-white/40 focus:outline-none focus:border-accent-line resize-none"
             />
           </div>
 
           <div className="text-center pt-2">
             <button
               type="submit"
-              className="inline-block bg-white text-navy font-medium text-base px-10 py-4 rounded hover:bg-white/90 transition-colors cursor-pointer"
+              className="inline-block bg-white text-main-blue font-medium text-base px-10 py-4 rounded hover:bg-white/90 transition-colors cursor-pointer"
             >
               送信する
             </button>
