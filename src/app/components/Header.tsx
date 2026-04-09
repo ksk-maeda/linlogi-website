@@ -21,7 +21,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#">
           <Image
-            src={scrolled ? "/logo/noBgBlack.svg" : "/logo/noBgColor.svg"}
+            src={scrolled ? "/logo/headerBlue.svg" : "/logo/headerWhite.svg"}
             alt="LinLogi"
             width={120}
             height={60}
